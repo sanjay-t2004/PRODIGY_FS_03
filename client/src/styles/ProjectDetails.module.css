@@ -1,0 +1,75 @@
+/* Wrapper section styling */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f8f9fa;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 80%;
+  margin: 20px auto;
+  min-height: 100vh;
+}
+
+/* Welcome Text */
+.welcome {
+  font-size: 4rem;
+  color: var(--primary-accent);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Description Text */
+.description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--secondary-accent);
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+/* Italic emphasis within description */
+.italic {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+
+/* CTA Button */
+.CTA {
+  padding: 15px 30px;
+  background-color: var(--primary-blue); /* Blue CTA background */
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4); /* Light shadow */
+}
+
+/* Hover effect for CTA button */
+.CTA:hover {
+  background-color: var(--secondary-blue);
+  transform: translateY(-5px); /* Subtle bounce up effect */
+}
+
+/* Responsive Text Alignment */
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .CTA {
+    font-size: 1rem;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
